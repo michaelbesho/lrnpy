@@ -1,0 +1,16 @@
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
+print(quicksort([3, 6, 8, 10, 2, 1, 7898, 445, 29, 0.6]))
+
+# this is to sortout the numbers
+
+y = 2.6
+y *= 2
+y += 23
+print(y)
